@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Activity 4</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- Using the W3.css for some normalization -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
-    
+
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
-  <body>
-    <h1>Hello there!</h1>
-    
-    <p>
-      This is the web page for the week four activity. You're going to make it more interesting with HTML forms and Javascript!
-    </p>
-    
-    <p>
-      Put your HTML form code here!
-    </p>
-    <p>
-      Put the data from LocalStorage here! Or put it somewhere else, I don't care.
-    </p>
-    
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <section id="form_input" class="w3-card-4" method="post">
+        <div class="w3-container w3-teal w3-margin-bottom">
+            <h2>Add a user</h2>
+        </div>
+        
+        <form class="w3-container">
+            <div class="form name>
+                <label for=" name">Name</label>
+                <input class="w3-input" type="text" id="name" name="user_name" value="">
+            </div>
+            <div class="form email">
+                <label for="mail">Email</label>
+                <input class="w3-input" type="email" id="mail" name="user_mail" value="" required>
+            </div>
+            <div class="form message">
+                <label for="msg">Password</label>
+                <input class="w3-input" type="password" id="pas" name="user_password" value="" required></input>
+            </div>
+
+            <button id="button1" class="w3-button w3-teal w3-margin-top" type="submit">
+                Click Me!
+            </button>
+        </form>
+    </section>
+
+
+    <!-- IndexedDB needs Callback function to retrieve data -->
+    <section id="data_display" class="w3-container w3-margin-top w3-" style="padding: 0%;">
+        <ul id="data_display_table" class="w3-ul w3-card-4"></ul>
+    </section>
+
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
-  </body>
+</body>
+
 </html>
